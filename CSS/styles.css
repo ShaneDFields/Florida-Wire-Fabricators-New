@@ -1,0 +1,995 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+h3 {
+  color: #1363de;
+}
+
+p {
+  color: black;
+}
+
+/* Headings */
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+  line-height: 1.5;
+  font-weight: 900;
+  padding-top: 15rem;
+  padding-left: 8rem;
+  padding-right: 4rem;
+  /* text-shadow: 2px 2px #355f6d; */
+  /* text-shadow: 3px 3px rgba(34, 126, 34, 1); */
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* .container-fluid {
+  padding: 3% 15% 7%;
+} */
+
+#title {
+  /* background-color: #4b79a1 ; */
+  /* background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #4b79a1 0%,
+    #c0c0c0 100.2%
+  ); */
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgb(128, 128, 128, 0.5) 0%,
+      rgb(35, 34, 34, 0.5) 90%
+    ),
+    url("../images/tyler-shaw-BP1Q3Ib_Pyo-unsplash.jpg");
+
+  background-size: cover;
+
+  color: white;
+  text-align: left;
+  height: 100vh;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  /* padding: 0 0 4.5rem; */
+  background-color: white;
+  border-bottom: 1px solid grey;
+  top: 0;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  height: 120px;
+}
+
+.navbar-toggler {
+  margin-right: 50px;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+
+  color: #1363df !important;
+  /* text-transform: uppercase; */
+}
+
+/* Download Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 170%;
+  margin-top: 0px;
+  padding-right: 160px;
+}
+
+/* icons */
+
+.icons {
+  color: rgba(14, 174, 87, 1);
+  /* text-align: center; */
+  margin-bottom: 1rem;
+  font-size: 80px;
+}
+
+.icons:hover {
+  color: rgba(34, 126, 34, 1);
+}
+
+/* Feature Sections */
+
+#features {
+  padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-title {
+  font-size: 1.5em;
+  color: #1363de;
+}
+
+.feature-text {
+  font-size: 1.3rem;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  /* background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #7ed56f 0%,
+    #28b485 100.2%
+  ); */
+
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(34, 126, 34, 1) 90%
+  );
+  color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  /* border-radius: 50%;
+  width:40%;
+  margin: 20px; */
+
+  /* background: 50% 50% no-repeat; /* 50% 50% centers image in div 
+  width: 250px;
+  height: 250px; */
+
+  width: 700px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 50%; */
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Press */
+
+#press {
+  /* background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #7ed56f 0%,
+    #28b485 100.2%
+  ); */
+
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(34, 126, 34, 1) 90%
+  );
+  /* background-color: #06283D; */
+  padding-bottom: 3%;
+}
+
+.press-img {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+  /* background-image: linear-gradient(
+    73.1deg,
+    rgba(34, 126, 34, 1) 8%,
+    rgba(99, 162, 17, 1) 86.9%
+  ); */
+
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgb(128, 128, 128, 0.5) 0%,
+      rgb(35, 34, 34, 0.5) 90%
+    ),
+    url("../images/IMG_5778.jpeg");
+  background-size: cover;
+}
+
+.price-heading {
+  color: white;
+  /* text-shadow: 3px 3px rgba(34, 126, 34, 1); */
+}
+
+.price-sub {
+  color: white;
+  /* text-shadow: 3px 3px rgba(34, 126, 34, 1); */
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #1363de;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Call to Action */
+
+#cta {
+  /* background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #4b79a1 0%,
+    #c0c0c0 100.2%
+  ); */
+  background-color: white;
+  color: #28b485;
+  padding: 100px;
+  padding-bottom: 200px;
+}
+
+.big-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+
+  padding-top: 1rem;
+  /* padding-left: 15rem;
+  padding-right: 4rem; */
+}
+
+.about-us-p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: black;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+.section-divider {
+  padding: 10rem 0;
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgb(128, 128, 128, 0.5) 0%,
+      rgb(35, 34, 34, 0.5) 90%
+    ),
+    url("../images/4k-nursery.avif");
+
+  background-size: cover;
+  height: 500px;
+  /* transform: skewY(-7deg); */
+  margin-top: -7rem;
+}
+
+.contact-cta {
+  color: white;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 900;
+  /* padding: 0px 50px 50px 50px; */
+  margin-top: -60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* text-shadow: 2px 2px rgba(34, 126, 34, 1); */
+}
+
+.contact-heading {
+  margin-top: 5rem;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #1363df;
+}
+
+#contactForm {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Footer */
+
+#footer {
+  /* background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #7ed56f 0%,
+    #28b485 100.2%
+  ); */
+
+  /* background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(34, 126, 34, 1) 90%
+  );
+  padding-top: 20px; */
+}
+
+.footer-logo {
+  height: 120px;
+}
+
+.footer-distributed {
+  /* background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(34, 126, 34, 1) 70%
+  ); */
+  background-color: rgba(14, 174, 87, 1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+/* .footer-distributed h3 span {
+  color: lightseagreen;
+} */
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding-left: 30px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 65px;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #1363df;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #fff;
+  text-decoration: none;
+  /* font-size: 12px; */
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: normal;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #1363df;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1028px) {
+  .footer-distributed {
+    font: bold 30px sans-serif;
+  }
+
+  .footer-info-mobile {
+    padding-bottom: 15px;
+  }
+
+  .footer-distributed .footer-company-name {
+    font-size: 20px;
+    padding-left: 0;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+  .footer-logo {
+    height: 170px;
+  }
+
+  .footer-distributed .footer-company-about {
+    font-size: 30px;
+  }
+
+  .footer-distributed .footer-company-about span {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+.social-icon {
+  color: black;
+  margin: 20px 10px;
+}
+
+.footer-brand {
+  height: 155px;
+}
+
+.footer-info {
+  padding-bottom: 5px;
+  color: white;
+}
+
+.footer-cc {
+  /* padding-top: 30px; */
+  color: white;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+/* PRODUCT PAGES */
+
+.product-heading {
+  color: white;
+  /* text-shadow: 3px 3px rgba(34, 126, 34, 1); */
+  font-size: 4rem;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.product-sub-heading {
+  color: white;
+  font-size: 1.5rem;
+  /* text-shadow: 3px 3px rgba(34, 126, 34, 1); */
+}
+
+/* CITRUS STAKE PRODUCT PAGE */
+
+.citrus-stake-hero {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgb(128, 128, 128, 0.5) 0%,
+      rgb(35, 34, 34, 0.5) 90%
+    ),
+    url("../images/citrus-background.jpeg");
+  background-size: cover;
+  margin-top: 135px;
+}
+
+.wire-bundles {
+  width: 80%;
+  height: 300px;
+  padding-left: 100px;
+}
+
+.wire-stump {
+  width: 80%;
+  height: 300px;
+  padding-left: 150px;
+}
+
+/* WIRE HANGERS PRODUCT PAGE ////////////////////////*/
+.wire-hangers-hero {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgb(128, 128, 128, 0.5) 0%,
+      rgb(35, 34, 34, 0.5) 90%
+    ),
+    url("../images/orchid-background.webp");
+  background-size: cover;
+  margin-top: 135px;
+}
+
+.product-item-heading {
+  color: #1363df;
+  font-size: 3rem;
+}
+
+.product-item-info {
+  color: black;
+  font-size: 2rem;
+}
+
+.four-way-hanger {
+  width: 100%;
+  height: 300px;
+}
+
+.double-hanger {
+  padding-top: 10px;
+  width: 30%;
+  height: 300px;
+  margin-left: 210px;
+}
+
+.s-hook {
+  padding-left: 100px;
+  width: 80%;
+  height: 300px;
+}
+
+.mini-hanger {
+  padding-left: 200px;
+  width: 80%;
+  height: 300px;
+}
+
+.pot-clips {
+  padding-left: 170px;
+  width: 80%;
+  height: 300px;
+}
+
+.pot-clips-col {
+  margin-left: 350px;
+}
+
+/* GROUND STAPLES PAGE  */
+
+.ground-staples-hero {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgb(128, 128, 128, 0.5) 0%,
+      rgb(35, 34, 34, 0.5) 90%
+    ),
+    url("../images/ground-staple.jpeg");
+  background-size: cover;
+  margin-top: 135px;
+}
+
+.ground-staples {
+  width: 80%;
+  height: 300px;
+  padding-left: 150px;
+}
+
+.ground-staples-col {
+  margin-left: 350px;
+}
+
+/* ////////////////// Media ////////////////////// */
+
+@media (max-width: 1028px) {
+  .title-image {
+    width: 200%;
+    /* padding-top: 35px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    text-align: center; */
+    padding-top: 40px;
+  }
+
+  #title {
+    text-align: center;
+    /* display: block;
+    margin: 0 auto; */
+    /* background-size: 600%;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: left;
+    height: 100vh; */
+    /* background-size: 200% 100vh;
+    background-repeat: no-repeat; */
+    /* background-image: url("../images/wire-background-mobile.jpeg"); */
+  }
+
+  .testimonial-image {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .big-heading {
+    font-size: 3rem;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    height: 250px;
+  }
+
+  .navbar-brand {
+    height: 230px;
+  }
+
+  .navbar-toggler {
+    /* height: 50px;
+    width: 50px; */
+    padding: 20px;
+  }
+
+  .navbar-toggler-icon {
+    /* height: 50px;
+    width: 50px;
+    padding: 50px; */
+    font-size: 50px;
+  }
+
+  #navbarTogglerDemo02 {
+    background-color: white;
+    border-bottom: 1px solid grey;
+  }
+
+  .show {
+    background-color: white;
+    border-bottom: 1px solid grey;
+  }
+
+  .nav-text {
+    font-size: 3rem;
+  }
+
+  /* .nav-extended {
+    padding-bottom: 500px;
+  } */
+
+  .heading {
+    font-size: 8.5rem;
+    text-align: center;
+
+    padding-top: 35rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .icons {
+    font-size: 150px;
+    padding-bottom: 50px;
+  }
+
+  .feature-title {
+    font-size: 4rem;
+  }
+
+  .feature-text {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .price-heading {
+    font-size: 5rem;
+  }
+
+  .price-sub {
+    font-size: 3rem;
+  }
+
+  .price {
+    font-size: 3rem;
+  }
+
+  .price-text {
+    font-size: 3.5rem;
+  }
+
+  .price-sub-text {
+    font-size: 3rem;
+  }
+
+  .price-button {
+    font-size: 3rem;
+  }
+
+  .big-heading {
+    font-size: 5rem;
+  }
+
+  .about-us-p {
+    font-size: 3rem;
+    padding-top: 60px;
+  }
+
+  .cta {
+    display: flex;
+  }
+
+  .section-divider {
+    height: 1500px;
+  }
+
+  .contact-cta {
+    /* padding-top: 50px; */
+    font-size: 6.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    padding-top: 250px;
+  }
+
+  .contact-heading {
+    font-size: 5rem;
+    padding-top: 25px;
+  }
+
+  #contactForm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form-text {
+    font-size: 3rem;
+    padding-bottom: 50px;
+  }
+
+  .btn-text {
+    font-size: 3rem;
+  }
+
+  .form-label {
+    font-size: 3rem;
+  }
+
+  .form-label-message {
+    font-size: 3rem;
+    padding-bottom: 400px;
+  }
+
+  .footer-brand {
+    /* font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold; */
+    height: 300px;
+  }
+
+  .footer-info {
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 3rem;
+  }
+
+  .footer-cc {
+    padding-top: 50px;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+  }
+
+  .product-heading {
+    color: white;
+    font-size: 4rem;
+  }
+
+  .product-sub-heading {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .wire-hangers-hero {
+    margin-top: 250px;
+  }
+
+  .four-way-hanger {
+    width: 100%;
+    height: 400px;
+  }
+
+  .double-hanger {
+    padding-top: 10px;
+    width: 30%;
+    height: 400px;
+    margin-left: 330px;
+  }
+
+  .s-hook {
+    padding-left: 200px;
+    width: 70%;
+    height: 400px;
+  }
+
+  .mini-hanger {
+    padding-left: 250px;
+    width: 80%;
+    height: 400px;
+  }
+
+  .pot-clips {
+    padding-left: 300px;
+    width: 70%;
+    height: 400px;
+  }
+
+  .pot-clips-col {
+    margin-left: 0;
+  }
+
+  .citrus-stake-hero {
+    margin-top: 250px;
+  }
+
+  .wire-bundles {
+    width: 90%;
+    height: 300px;
+    padding-left: 120px;
+  }
+
+  .wire-stump {
+    width: 85%;
+    height: 400px;
+    padding-left: 150px;
+  }
+
+  .ground-staples-hero {
+    margin-top: 250px;
+  }
+  .ground-staples {
+    width: 80%;
+    height: 300px;
+    padding-left: 150px;
+  }
+
+  .ground-staples-col {
+    margin-left: 0;
+  }
+}
